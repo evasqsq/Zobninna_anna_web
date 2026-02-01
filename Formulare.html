@@ -1,0 +1,90 @@
+<HTML>
+    <HEAD>
+      <TITLE>Formulare</TITLE>
+      <link rel="stylesheet" href="styles.css">
+    </HEAD>
+    <BODY>
+    <div class="navigation">
+        <ul>
+            <li><a href="index.html">Hlavna Stranka</a></li>
+            <li><a href="Boing.html">Boeing</a></li>
+            <li><a href="Formulare.html">Formular</a></li>
+            <li><a href="ulohy.html" class="active">Domáce úlohy</a></li>
+        </ul>
+    </div>
+      <FORM ACTION="formulare.php" METHOD="get">
+    
+       <b>Prihlásenie sa do konkurzu cez Internet na pracovné miesto v leteckom podniku. <P>Ako si sa dozvedel o tejto stranke? (prepinac)
+        </B></P><P>
+        <INPUT TYPE="radio" NAME="ako" VALUE="nahodou"> nahodou
+        <BR>
+        <INPUT TYPE="radio" CHECKED NAME="ako" VALUE="odkaz"> odkazom z inej stranky
+        <BR>
+        <INPUT TYPE="radio" NAME="ako" VALUE="kamos"> od znameho
+    
+        <P>
+        <B>Paci sa ti tato stranka? (zaskrtavacie policko)
+       </B> <P>
+        <INPUT CHECKED TYPE="checkbox" NAME="ak_sa_ti_paci" VALUE="paci_sa_mi"> Paci sa mi
+        <P>
+        <INPUT TYPE="checkbox" NAME="ak_sa_ti_paci_velmi"
+        VALUE="paci_sa_mi_velmi"> Paci sa mi velmi
+         <p>   
+        <fieldset>
+          <legend>Zakladne udaje</legend>
+          <input name="meno" value="Meno">
+          <input name="priezvisko" value="Priezvisko">
+        </fieldset>   
+    
+        
+    
+        
+        
+        <P><B>
+        Sem napis heslo:
+        </B><P>
+        <INPUT TYPE="password" NAME="heslo">
+        
+        <P>
+        <INPUT TYPE="hidden" NAME="skrytaprem" VALUE="100">
+           
+        <p>   
+        Vyber si polozku zo zoznamu:
+        <select name="vyber">
+          <option>Pilot</option>
+          <option>Letuška</option>
+          <option>Ochrana letiska</option>
+          <option>Sekretárka</option>
+          <option>Referent</option>
+          <option>Vodič</option>
+          <option>Upratovačka</option>
+          <option> Vedúci oddelenia</option>
+          <option>Poradca</option>
+        </select>       
+           
+        <p>   
+        Co mate z nasho sortimentu najradsej?
+        <select name="zelovoc">
+          
+            <option>Pilot</option>
+            <option>Letuška</option>
+            <option>Ochrana letiska</option>
+            <option>Sekretárka</option>
+            <option>Referent</option>
+            <option>Vodič</option>
+            <option>Upratovačka</option>
+            <option>Vedúci oddelenia</option>
+            <option>Poradca</option>
+           
+          </optgroup>  
+        </select>       
+        <P>
+        <B>Sem môžeš napísať komentár
+        <P>
+        <TEXTAREA ROWS="10" COLS="32" NAME="komentar">
+        </TEXTAREA>
+        <P>    
+        <INPUT TYPE="submit" VALUE="Poslat!"> (odosielacie policko)
+        <P>
+        <INPUT TYPE="reset" VALUE="Zrusit!"> (resetovacie policko)
+      </FORM>
